@@ -31,14 +31,44 @@
 </head>
 
 <body>
-  <nav>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+      <a class="navbar-brand" href="#">
+        <h1 class="logo">Fixie</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Product</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Blog</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-  </nav>
- 
+  </div>
+
   <%- contents %>
-  
+
   <footer>
-    
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white flex-row-reverse  justify-content-between align-items-center">
+        
+        <a class="navbar-brand" href="#">
+          <h1 class="logo">Fixie</h1>
+        </a>
+        <p class="font-Roboto mb-0">© 2020 Fixie. All Rights Reserved.</p>
+        <div class="navbar-nav ">
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Product</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Blog</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Contact</a>
+        </div>
+
+      </nav>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
