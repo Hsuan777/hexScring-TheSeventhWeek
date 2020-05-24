@@ -6,4 +6,83 @@ current: index
 ---
 <main>
 
+  <!-- 由於高度非文字撐開，在 .row加上 .h-100 -->
+  <section class="section__banner container-fluid">
+    <div class="row  h-100 ">
+
+      <!-- 若放在 .col- 內，會被上層 .row影響而滿版 -->
+      <div class="container d-flex  align-items-center  " >
+        <!-- 標題與描述 -->
+        <div class="row flex-column justify-content-center ">
+          <div class="col-6  mb-5">
+            <h2 class="h1 text-primary mb-0 " data-aos="slide-right" data-aos-duration="800" data-aos-delay="800">Single Speed,<br> Single
+              Life.</h2>
+          </div>
+          <div class="col-5">
+            <p class="p h4 mb-5" data-aos="slide-right" data-aos-duration="800" data-aos-delay="800">More recently the “fixie” has become a
+              popular alternative among mainly urban cyclists,
+              offering the advantage of simplicity compared with the standard multi-geared bicycle.</p>
+            <button class="btn btn-secondary border-dark btn-lg" data-aos="slide-right" data-aos-duration="800" data-aos-delay="800">Shop
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+     
+      <!-- 右邊底圖 -->
+      <div class="section__img section__img__style2 col-6 bg-dark " style="right:0;"
+      data-aos="slide-left" data-aos-duration="800" data-aos-delay="800"></div>
+      <!-- 右邊大圖 -->
+      <div class="section__img section__img__style2  section__img__1 col-6 border-bottom border-dark" style="right:0;"
+        data-aos="slide-left" data-aos-duration="800" data-aos-delay="1600">
+      </div>
+      <!-- 按鈕區 -->
+      <!-- TODO: padding高度不對 -->
+      <div class="container " style="position:absolute; right:0 ;left: 0; bottom:0" data-aos="slide-left" data-aos-duration="800">
+        <div class="row">
+          <div class="col-1 ml-auto  border-left border-right p-4 border-dark">
+            <span class="material-icons h3  mb-0 text-primary  "> keyboard_arrow_left </span>
+  
+          </div>
+          <div class="col-1  border-right p-4 border-dark">
+            <span class="material-icons h3  mb-0 text-primary  "> keyboard_arrow_right </span>
+  
+          </div>
+          <div class="col-4 ">
+            <h3 class="mb-0 text-primary pt-4 pb-4 pl-4"  data-aos="slide-left" data-aos-duration="800" data-aos-delay="1600">Collection 001-xx</h3>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="section__banner2 container-fluid">
+    <!-- 在 .row下位移只能控制一個，也就是說兩個定位元素會一起移動 -->
+    <div class="row  h-100">
+      <!-- 左邊大圖 -->
+      <div class="section__img  section__img__2 col-6 " data-aos="slide-right" data-aos-duration="800"> </div>
+      <!-- 右邊大標題，使用定位並靠右 -->
+      <div class="col-6 bg-secondary h-100 ml-auto" style="position:absolute; right: 0;">
+        <div class="d-flex justify-content-end align-items-end p-6 h-100">
+          <h2 class="mb-3 text-primary text-right ">One Gear, <br> <span>Many Variations</span> </h2>
+        </div>
+      </div>
+      <!-- 描述文字 -->
+      <div class="container">
+        <div class="row ">
+          <div class="col-5 ml-auto ">
+            <div class="py-6 d-flex flex-column justify-content-between ">
+              <p>A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most
+                direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move
+                than a geared bike in the same gear.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
