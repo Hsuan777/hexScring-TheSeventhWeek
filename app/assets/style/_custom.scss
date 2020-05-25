@@ -11,6 +11,10 @@
     height: 960px;
     position: relative;
   }
+  &__banner3{
+    height: 640px;
+    position: relative;
+  }
   &__img {
     position: absolute;
     background-size: cover;
@@ -36,6 +40,10 @@
     }
     &__2{
       background-image: url("../images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg");
+    }
+    &__4{
+      background-image: url("../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg");
+      background-position: top 25% center;
     }
   }
   
