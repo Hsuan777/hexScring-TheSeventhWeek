@@ -43,8 +43,37 @@
     }
     &__4{
       background-image: url("../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg");
-      background-position: top 25% center;
+      background-position: top 20%  center;
     }
   }
   
 }
+
+[data-aos="translateX-left"] {
+  transform: translateX(0px);
+  &.aos-animate {
+    transform: translateX(-50px);
+  }
+}
+[data-aos="translateX-right"] {
+  transform: translateX(0px);
+  &.aos-animate {
+    transform: translateX(50px);
+    background-position: center left ;
+  }
+}
+[data-aos="bgImage-position-left"] {
+  
+  &.aos-animate {
+    background-position: center left ;
+  }
+}
+
+// 腳踏車大叔用
+[data-aos="bgImage-position-center"] {
+  
+  &.aos-animate {
+    background-position: top 40%  center ;
+  }
+}
+
