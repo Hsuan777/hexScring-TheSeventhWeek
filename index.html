@@ -1,10 +1,57 @@
----
-title: index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="HTML，CSS，RWD，前端，線上課程，網頁設計">
+
+  <!-- BootStrap CDN -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+  <!-- AOS CDN  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Lato Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Merriweather Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+
+  <!-- Google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <title>index</title>
+  <link rel="stylesheet" href="assets/style/all.css">
+</head>
+
+<body>
+  <div class="container-fluid  border-bottom border-dark ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  " data-aos="slide-down" data-aos-duration="300">
+      <a class="navbar-brand" href="#">
+        <h1 class="logo">Fixie</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto" >
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Product</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Blog</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <main>
 
   <section class="section__banner section__banner--style1  container-fluid">
     <!-- 由於高度非文字撐開，在 .row加上 .h-100 -->
@@ -235,3 +282,44 @@ current: index
     </div>
   </section>
 </main>
+  
+  <footer >
+    <div class="container " data-aos="slide-up" data-aos-duration="200" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary flex-row-reverse  justify-content-between align-items-center" >
+        
+        <a class="navbar-brand" href="#">
+          <h1 class="logo">Fixie</h1>
+        </a>
+        <p class="font-Roboto mb-0">© 2020 Fixie. All Rights Reserved.</p>
+        <div class="navbar-nav ">
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Product</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Blog</a>
+          <a class="nav-item nav-link text-primary font-weight-bold" href="#">Contact</a>
+        </div>
+
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+
+  <!-- AOS JS CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="assets/js/all.js"></script>
+  <!-- <script src="assets/js/vendors.js"></script> -->
+</body>
+
+</html>
