@@ -42,6 +42,9 @@
     &__2{
       background-image: url("../images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg");
     }
+    &__3{
+      background-image: url("../images/josh-nuttall-76DfCHM-4u0-unsplash.jpg");
+    }
     &__4{
       background-image: url("../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg");
       background-position: top 20%  center;
@@ -50,25 +53,23 @@
   
 }
 
-[data-aos="translateX-left"] {
+[data-aos="text-translateX-left"] {
   transform: translateX(0px);
   &.aos-animate {
     transform: translateX(-50px);
   }
 }
-[data-aos="translateX-right"] {
+[data-aos="text-translateX-right"] {
   transform: translateX(0px);
   &.aos-animate {
     transform: translateX(50px);
-    background-position: center left ;
   }
 }
 
-[data-aos="bgImage-position-left"] {
+[data-aos="bgImage-position-right"] {
   
   &.aos-animate {
-    opacity: 1;
-    background-position: center left ;
+    background-position: center right ;
   }
 }
 
@@ -94,5 +95,11 @@
 
 }
 .readMore{
-  margin-right: -71px;
+  &--marginRight{
+    margin-right: -71px;
+  }
+  &--marginLeft{
+    margin-left: -165px;
+
+  }
 }

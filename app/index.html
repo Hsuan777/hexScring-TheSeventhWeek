@@ -6,8 +6,9 @@ current: index
 ---
 <main>
 
-  <!-- 由於高度非文字撐開，在 .row加上 .h-100 -->
+ 
   <section class="section__banner container-fluid">
+     <!-- 由於高度非文字撐開，在 .row加上 .h-100 -->
     <div class="row  h-100 ">
 
       <!-- 若放在 .col- 內，會被上層 .row影響而滿版 -->
@@ -38,9 +39,11 @@ current: index
         data-aos-duration="800" data-aos-delay="800">
       </div>
       <!-- 右邊大圖 -->
-      <div class="section__img section__img__style2  section__img__1 col-6 border-bottom border-dark" style="right:0;"
+      <div class="section__img section__img__style2  section__img__1 col-6 " style="right:0;"
         data-aos="slide-left" data-aos-duration="800" data-aos-delay="1600">
       </div>
+      <div class="section__img col-6 border-bottom border-dark h-100" style="right:0;" data-aos="slide-left"
+      data-aos-duration="800" data-aos-delay="800"></div>
       <!-- 按鈕區 -->
       <div class="container " style="position:absolute; right:0 ;left: 0; bottom:0" data-aos="slide-left"
         data-aos-duration="800" data-aos-delay="800">
@@ -75,10 +78,10 @@ current: index
             data-aos-duration="800" data-aos-delay="800" >
             Read More
           </p>
-          <span class="material-icons p mb-0 text-light h4 bg-dark p-2 readMore "> keyboard_arrow_right </span>
+          <span class="material-icons p mb-0 text-light h4 bg-dark p-2  readMore--marginRight"> keyboard_arrow_right </span>
         </div>
       </div>
-      <!-- 二次移動 -->
+      <!-- 左邊大圖，二次移動 -->
       <div  class="section__img  section__img__2 col-6 opacity-0"  data-aos="bgImage-position-left"
         data-aos-duration="800" data-aos-anchor="#bicycle" data-aos-anchor-placement="bottom-bottom" >
       </div>
@@ -86,14 +89,13 @@ current: index
       <div class="col-6 bg-secondary h-100 ml-auto" style="position:absolute; right: 0;">
         <div class="d-flex flex-column justify-content-end align-items-end p-6 h-100">
           <!-- 卷軸往下 500px時，文字左右交叉移動 -->
-          <h2 class="mb-3 text-primary text-right ">
-            <span data-aos="translateX-left" data-aos-duration="800" data-aos-offset="400" class="d-inline-block"> One Gear,</span> <br>
-            <span  data-aos="translateX-right" data-aos-duration="800" data-aos-offset="300" class="d-inline-block"  >Many Variations</span>
+          <h2 class="mb-3 text-primary text-right mb-6">
+            <span data-aos="text-translateX-left" data-aos-duration="800" data-aos-offset="400" class="d-inline-block"> One Gear,</span> <br>
+            <span  data-aos="text-translateX-right" data-aos-duration="800" data-aos-offset="300" class="d-inline-block"  >Many Variations</span>
             <!-- 碰到此元素才觸發效果 -->
           </h2>
           <div   id="bicycle" ></div>
         </div>
-
       </div>
       
       <!-- 右邊描述文字 -->
@@ -109,9 +111,50 @@ current: index
         </div>
       </div>
     </div>
-    
-
   </section>
+
+  <section class="section__banner2 container-fluid">
+    <div class="row h-100">
+      <!-- 右邊大圖 -->
+      <div  class="section__img  section__img__3 col-6 " style="z-index: 9; right: 0;" data-aos="bgImage-position-right" data-aos-duration="800" data-aos-offset="800">
+        <!-- 中間文字 -->
+        <div class="d-flex  align-items-center h-100 "  >
+          <p class="bg-primary text-light font-weight-bold mb-0 p-2 h4 text-nowrap readMore--marginLeft" >
+            Read More
+          </p>
+          <span class="material-icons p mb-0 text-primary h4 bg-secondary p-2  "> keyboard_arrow_right </span>
+        </div>
+      </div>
+      <!-- 左邊大標題，使用定位 -->
+      <div class="col-6 bg-secondary h-100 ml-auto" style="position:absolute; ">
+        <div class="d-flex  p-6 h-100">
+          <!-- 卷軸往下 500px時，文字左右交叉移動 -->
+          <h2 class="mb-3 text-primary  mt-6">
+            <span data-aos="text-translateX-left" data-aos-duration="800" data-aos-offset="400" class="d-inline-block">Stripped-Down</span> <br>
+            <span  data-aos="text-translateX-right" data-aos-duration="800" data-aos-offset="300" class="d-inline-block"  >Performance</span>
+            <!-- 碰到此元素才觸發效果 -->
+          </h2>
+        </div>
+      </div>
+
+      <!-- 右邊描述文字 -->
+      <div class="container ">
+        <div class="row align-items-end h-100">
+          <div class="col-5  ">
+            <div class="py-6 " data-aos="slide-left"  data-aos-duration="800">
+              <p>A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most
+                direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move
+                than a geared bike in the same gear.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
   <!-- 白底文字 -->
   <section>
