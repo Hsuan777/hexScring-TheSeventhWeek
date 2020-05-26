@@ -16,6 +16,14 @@
       height: 640px;
     }
   }
+  &__info{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    &--right{
+      right: 0;
+    }
+  }
   &__img {
     position: absolute;
     background-size: cover;
@@ -29,16 +37,21 @@
     }
     &__1{
       background-image: url("../images/josh-nuttall-pIwu5XNvXpk-unsplash.jpg");
+      right: 0;
       z-index: 9;
     }
     &__2{
       background-image: url("../images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg");
+      z-index: 9;
       &--translateX{
+        z-index: -1;
         transform: translateX(-15px);
       }
     }
     &__3{
       background-image: url("../images/josh-nuttall-76DfCHM-4u0-unsplash.jpg");
+      right: 0;
+      z-index: 9;
     }
     &__4{
       background-image: url("../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg");
@@ -82,11 +95,22 @@
 }
 
 .readMore{
+  z-index: 18;
   &--marginRight{
     margin-right: -71px;
+    // margin-right: 0px;
   }
   &--marginLeft{
     margin-left: -165px;
 
+  }
+}
+
+.custom{
+  &__btnArea{
+    position:absolute; 
+    right:0 ;
+    left: 0; 
+    bottom:0
   }
 }
