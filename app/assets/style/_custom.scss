@@ -2,18 +2,19 @@
   @include  hidden-text(112px, 48px ,url("../images/logo-fixie.svg"))
 }
 .section{
+  
   &__banner{
-    // height: 864px;
-    height: 984px;
+    
     position: relative;
-  }
-  &__banner2{
-    height: 960px;
-    position: relative;
-  }
-  &__banner3{
-    height: 640px;
-    position: relative;
+    &--style1{
+      height: 984px;
+    }
+    &--style2{
+      height: 960px;
+    }
+    &--style3{
+      height: 640px;
+    }
   }
   &__img {
     position: absolute;
@@ -24,13 +25,8 @@
     bottom:0;
     
     &__style1{
-      height: 960px;
-    }
-    &__style2{
       height: 864px;
     }
-    
-    
     &__1{
       background-image: url("../images/josh-nuttall-pIwu5XNvXpk-unsplash.jpg");
       z-index: 9;
@@ -51,7 +47,7 @@
   }
   
 }
-
+// 文字交錯
 [data-aos="text-translateX-left"] {
   transform: translateX(0px);
   &.aos-animate {
@@ -65,25 +61,24 @@
   }
 }
 
+// 車手與車，圖位置向右靠
 [data-aos="bgImage-position-right"] {
   &.aos-animate {
     background-position: center right ;
   }
 }
+// 鍊條，圖位置向左靠
 [data-aos="bgImage-position-left"] {
   &.aos-animate {
     background-position: center left ;
   }
 }
 
-// 腳踏車大叔用
+// 腳踏車大叔，圖位置往下移動 40%
 [data-aos="bgImage-position-bottom"] {
   &.aos-animate {
     background-position: top 40%  center ;
   }
-}
-.opacity-0{
-  opacity: 0;
 }
 
 .readMore{
