@@ -2,20 +2,17 @@
   @include  hidden-text(112px, 48px ,url("../images/logo-fixie.svg"))
 }
 .section{
-  
+  position: relative;
   &__banner{
-
-    position: relative;
-    &--style1{
-      height: 984px;
-    }
-    &--style2{
-      height: 960px;
-    }
-    &--style3{
-      height: 640px;
-    }
+    height: 984px;
+  }  
+  &__subBanner{
+    height: 960px;
   }
+  &__mainCharacter{
+    height: 640px;
+  }
+  
   &__info{
     position: absolute;
     top: 0;
@@ -32,7 +29,7 @@
     top:0;
     bottom:0;
     z-index: 9;
-    &__style1{
+    &__banner{
       height: 864px;
     }
     &__1{
