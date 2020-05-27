@@ -1,23 +1,39 @@
-.logo{
-  @include  hidden-text(112px, 48px ,url("../images/logo-fixie.svg"))
+.logo {
+  @include hidden-text(112px, 48px, url("../images/logo-fixie.svg"));
 }
-.section{
+.image--cover {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+}
+/* 區塊命名 */
+.section {
   position: relative;
-  &__banner{
+  &__banner {
     height: 984px;
-  }  
-  &__subBanner{
+    .inner {
+      &__img {
+        background-image: url("../images/josh-nuttall-pIwu5XNvXpk-unsplash.jpg");
+        right: 0;
+      }
+    }
+  }
+  &__subBanner {
     height: 960px;
   }
-  &__mainCharacter{
+  &__mainCharacter {
     height: 640px;
   }
-  
-  &__info{
+  /* 區塊文字資訊 */
+  &__info {
     position: absolute;
     top: 0;
-    bottom:0;
-    &--right{
+    bottom: 0;
+    &--right {
       right: 0;
     }
   }
@@ -26,34 +42,33 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top:0;
-    bottom:0;
+    top: 0;
+    bottom: 0;
     z-index: 9;
-    &__banner{
+    &__banner {
       height: 864px;
     }
-    &__1{
+    &__1 {
       background-image: url("../images/josh-nuttall-pIwu5XNvXpk-unsplash.jpg");
       right: 0;
     }
-    &__2{
+    &__2 {
       background-image: url("../images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg");
-      &--translateX{
+      &--translateX {
         z-index: -1;
         transform: translateX(-15px);
       }
     }
-    &__3{
+    &__3 {
       background-image: url("../images/josh-nuttall-76DfCHM-4u0-unsplash.jpg");
       right: 0;
     }
-    &__4{
+    &__4 {
       background-image: url("../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg");
-      background-position: top 20%  center;
+      background-position: top 20% center;
       z-index: 0;
     }
   }
-  
 }
 // 文字交錯
 [data-aos="text-translateX-left"] {
@@ -72,40 +87,39 @@
 // 車手與車，圖位置向右靠
 [data-aos="bgImage-position-right"] {
   &.aos-animate {
-    background-position: center right ;
+    background-position: center right;
   }
 }
 // 鍊條，圖位置向左靠
 [data-aos="bgImage-position-left"] {
   &.aos-animate {
-    background-position: center left ;
+    background-position: center left;
   }
 }
 
-// 腳踏車大叔，圖位置往下移動 
+// 腳踏車大叔，圖位置往下移動
 [data-aos="bgImage-position-bottom"] {
   &.aos-animate {
-    background-position: top 40%  center ;
+    background-position: top 40% center;
   }
 }
 
-.readMore{
+.readMore {
   z-index: 18;
-  &--marginRight{
+  &--marginRight {
     margin-right: -71px;
     // margin-right: 0px;
   }
-  &--marginLeft{
+  &--marginLeft {
     margin-left: -165px;
-
   }
 }
 
-.custom{
-  &__btnArea{
-    position:absolute; 
-    right:0 ;
-    left: 0; 
-    bottom:0
+.custom {
+  &__btnArea {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
 }
